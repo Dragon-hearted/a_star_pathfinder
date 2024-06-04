@@ -57,8 +57,8 @@ This project implements the A* Pathfinding Algorithm using Pygame to visualize t
 1. **Start the Program**: Run the `main.py` script to start the visualization.
 2. **Instructions Page**: Read through the instructions displayed on the screen.
 3. **Start the Visualization**:
-    - Left-click to add the start node (orange).
-    - Left-click again to add the end node (turquoise).
+    - Left-click to add the start node (PINK).
+    - Left-click again to add the end node (BLUE).
     - Continue left-clicking to add barrier nodes (black).
     - Right-click to remove nodes.
     - Press `Space` to start the algorithm.

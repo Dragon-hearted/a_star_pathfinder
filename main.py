@@ -13,8 +13,8 @@ GREEN = (0, 255, 0)  # Node is open for consideration
 WHITE = (255, 255, 255)  # Default/untouched node
 BLACK = (0, 0, 0)  # Barrier node, cannot be used
 PURPLE = (128, 0, 128)  # Node is part of the final path
-ORANGE = (255, 165, 0)  # Start node
-TURQUOISE = (64, 224, 208)  # End node
+PINK = (255, 0, 255)  # Start node
+BLUE = (0, 0, 128)  # End node
 GREY = (128, 128, 128)  # Grid lines
 
 
@@ -61,13 +61,13 @@ class Node:
         """
         Returns True if the node is the start node.
         """
-        return self.color == ORANGE
+        return self.color == PINK
 
     def is_end(self):
         """
         Returns True if the node is the end node.
         """
-        return self.color == TURQUOISE
+        return self.color == BLUE
 
     def reset(self):
         """
@@ -79,7 +79,7 @@ class Node:
         """
         Sets the node color to the start color.
         """
-        self.color = ORANGE
+        self.color = PINK
 
     def make_closed(self):
         """
@@ -103,7 +103,7 @@ class Node:
         """
         Sets the node color to the end color.
         """
-        self.color = TURQUOISE
+        self.color = BLUE
 
     def make_path(self):
         """
@@ -321,8 +321,8 @@ def instructions_page():
 
     instructions = [
         "Instructions:",
-        "1. Left-click to add the start node (Orange).",
-        "2. Left-click again to add the end node (Turquoise).",
+        "1. Left-click to add the start node (PINK).",
+        "2. Left-click again to add the end node (BLUE).",
         "3. After adding start and end nodes, left-click to add barriers (Black).",
         "4. Right-click to remove a node.",
         "5. Click 'Space' to start the algorithm.",
