@@ -68,4 +68,4 @@ This project implements the A* Pathfinding Algorithm using Pygame to visualize t
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the [MIT License](LICENSE). See the LICENSE file for details.
